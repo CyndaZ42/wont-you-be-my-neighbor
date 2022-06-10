@@ -1,7 +1,9 @@
 //Utility Logic
 
-function RNG(cap){
-  return Math.floor(math.random() * cap) + 1;
+function RNG(){
+  const cap2 = Math.floor(Math.random() * 969) + 1;
+  const cap = Math.floor(Math.random() * cap2) + 1;
+  return Math.floor(Math.random() * cap) + 1;
 }
 
 //Buisiness Logic
@@ -41,6 +43,14 @@ function beMyNeighbor(input){
 //UI Logic
 
 $(document).ready(function(){
+  
+  $("form#rndm").submit(function(event){
+    event.preventDefault();
+    const randomNum = RNG();
+    $("#lazy").text("Your number is " + randomNum);
+    $("#output").text(beMyNeighbor(randomNum));
+  });
+
   $("form#neighbor").submit(function(event){
     event.preventDefault();
     const number = $("#number").val();
