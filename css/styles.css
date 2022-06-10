@@ -1,0 +1,54 @@
+body {
+  animation: 2s fadein;
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url(Neighborhood.jpg);
+  background-size: auto,2400px;
+  background-repeat: repeat-x;
+  background-position: fixed, center center;
+  background-attachment: fixed;
+  color: aliceblue;
+  text-shadow: 1px 1px 2px black;
+}
+
+h3 {
+  color: rgb(208, 255, 202);
+}
+
+button {
+  background-color: rgb(210, 39, 55) !important;
+  color: aliceblue !important;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10px;
+}
+
+.container {
+  background-color: transparent;
+  align-content: center;
+}
+
+.photo {
+  margin-left: 10px;
+  margin-right: 30px;
+  margin-top: 0px;
+  float: right;
+  border-radius: 0.3rem;
+  text-align: center;
+  vertical-align: top;
+}
+
+.head {
+  margin: 30px;
+  margin-left: 10%;
+  margin-right: 0px;
+  padding: 10px;
+  padding-left: 3%;
+  background-image: linear-gradient(to right,rgb(206, 47, 59),rgb(247, 148, 103));
+  color: white;
+  height: 67px;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

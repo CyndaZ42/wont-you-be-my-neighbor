@@ -43,7 +43,7 @@ function beMyNeighbor(input){
 //UI Logic
 
 $(document).ready(function(){
-  
+
   $("form#rndm").submit(function(event){
     event.preventDefault();
     const randomNum = RNG();
@@ -54,6 +54,7 @@ $(document).ready(function(){
   $("form#neighbor").submit(function(event){
     event.preventDefault();
     const number = $("#number").val();
+    $("#lazy").text("");
     $("#output").text(beMyNeighbor(number));
   });
 });
