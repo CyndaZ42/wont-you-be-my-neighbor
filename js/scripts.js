@@ -1,5 +1,9 @@
 //Utility Logic
 
+function RNG(cap){
+  return Math.floor(math.random() * cap) + 1;
+}
+
 //Buisiness Logic
 
 function countTo(long){
@@ -20,7 +24,7 @@ function beepBoop(list){
       return "Boop";
     }
     else if (element.toString().includes(1)){
-      return "Beep";
+      return "Beep!";
     }
     else {
       return element;
@@ -30,8 +34,11 @@ function beepBoop(list){
 }
 
 //UI Logic
+
 $(document).ready(function(){
   $("form#neighbor").submit(function(event){
     event.preventDefault();
+    const number = $("#number").val();
+    $("#output").text(beepBoop(countTo(number)));
   });
 });
