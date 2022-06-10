@@ -33,6 +33,10 @@ function beepBoop(list){
   return outputArray;
 }
 
+function beMyNeighbor(input){
+  return beepBoop(countTo(input));
+}
+
 //UI Logic
 
 $(document).ready(function(){
