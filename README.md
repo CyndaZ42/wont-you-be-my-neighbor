@@ -39,16 +39,20 @@ Expected Output: [0, 1, 2, 3]
 
 _Describe: beepBoop()_
 
-Test: "It should replace the number 3 with Won't you be my neighbor?"
+Test: "It should replace the number 3 with 'Won't you be my neighbor?'"
 Code: counting = [0, 1, 2, 3, 4, 5];
 beepBoop(counting);
-Expected Output: [0, 1, 2, "Won't you be my neighbor?", 4, 5]
+Expected Output: [undefined, undefined, undefined, "Won't you be my neighbor?", undefined, undefined]
 
-Test: "It should replace the number 2 with Boop"
+Test: "It should replace the number 2 with 'Boop'"
 Code: counting = [0, 1, 2, 3, 4, 5];
 beepBoop(counting);
-Expected Output: [0, 1, 'Boop', "Won't you be my neighbor?", 4, 5]
+Expected Output: [undefined, undefined, 'Boop', "Won't you be my neighbor?", undefined, undefined]
 
+Test: "It should replace the number 1 with 'Beep'"
+Code: counting = [0, 1, 2, 3, 4, 5];
+beepBoop(counting);
+Expected Output: [undefined, 'Beep', 'Boop', "Won't you be my neighbor?", undefined, undefined]
 
 ## License
 
