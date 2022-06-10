@@ -29,6 +29,15 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * _Any known issues_
 * _should go here_
 
+## TDD
+
+_Describe: countTo()_
+
+Test: "It should return an array of numbers from 0 to the user's inputted number"
+Code: countTo("3");
+Expected Output: [0, 1, 2, 3]
+
+
 ## License
 
 Copyright (c) _2022_ _Zac Waggoner_
