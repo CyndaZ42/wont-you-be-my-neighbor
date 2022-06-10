@@ -11,6 +11,15 @@ function countTo(long){
  return counting;
 }
 
+function beepBoop(list){
+  outputArray = list.map(function(element){
+    if (element.toString().includes(3)){
+      return "Won't you be my neighbor";
+    }
+  });
+  return outputArray;
+}
+
 //UI Logic
 $(document).ready(function(){
   $("form#neighbor").submit(function(event){

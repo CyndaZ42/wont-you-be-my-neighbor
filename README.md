@@ -37,6 +37,12 @@ Test: "It should return an array of numbers from 0 to the user's inputted number
 Code: countTo("3");
 Expected Output: [0, 1, 2, 3]
 
+_Describe: beepBoop()_
+
+Test: "It should replace the number 3 with Won't you be my neighbor?"
+Code: counting = [0, 1, 2, 3, 4, 5];
+beepBoop(counting);
+Expected Output: [0, 1, 2, "Won't you be my neighbor?", 4, 5]
 
 ## License
 
