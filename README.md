@@ -54,6 +54,11 @@ Code: counting = [0, 1, 2, 3, 4, 5];
 beepBoop(counting);
 Expected Output: [undefined, 'Beep', 'Boop', "Won't you be my neighbor?", undefined, undefined]
 
+Test: "It should return any number without 1, 2, or 3 where it was"
+Code: counting = [0, 1, 2, 3, 4, 5];
+beepBoop(counting);
+Expected Output: [0, 'Beep', 'Boop', "Won't you be my neighbor?", 4, 5]
+
 ## License
 
 Copyright (c) _2022_ _Zac Waggoner_

@@ -22,6 +22,9 @@ function beepBoop(list){
     else if (element.toString().includes(1)){
       return "Beep";
     }
+    else {
+      return element;
+    }
   });
   return outputArray;
 }
