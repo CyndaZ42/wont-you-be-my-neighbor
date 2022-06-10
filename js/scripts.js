@@ -34,7 +34,8 @@ function beepBoop(list){
 }
 
 function beMyNeighbor(input){
-  return beepBoop(countTo(input));
+  output = beepBoop(countTo(input));
+  return output.join(" ");
 }
 
 //UI Logic
@@ -43,6 +44,6 @@ $(document).ready(function(){
   $("form#neighbor").submit(function(event){
     event.preventDefault();
     const number = $("#number").val();
-    $("#output").text(beepBoop(countTo(number)));
+    $("#output").text(beMyNeighbor(number));
   });
 });

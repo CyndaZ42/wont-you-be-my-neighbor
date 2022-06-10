@@ -63,7 +63,11 @@
 >
 >Test: "It Should take a number input and pass it through the other functions"  
 >Code: beMyNeighbor(5);  
->Expected Output: [0, 'Beep!', 'Boop', "Won't you be my neighbor?", 4, 5]
+>Expected Output: [0, 'Beep!', 'Boop', "Won't you be my neighbor?", 4, 5]  
+>
+>Test: "It Should take a number input, pass it through the other functions, and return a string"  
+>Code: beMyNeighbor(5);  
+>Expected Output: "0 Beep! Boop Won't you be my neighbor? 4 5]"  
 
 ## License
 
