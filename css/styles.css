@@ -1,7 +1,9 @@
+@charset "UTF-8";
+@font-face{font-family:Mackinac Pro Extra Bld; src:url(../fonts/mackinac-pro/MackinacProExtraBld.ttf);}
 body {
-  animation: 2s fadein;
-  font-family: 'Times New Roman', Times, serif;
-  background-image: url(Neighborhood.jpg);
+  animation: 0.5s fadein;
+  font-family:Mackinac Pro Extra Bld;
+  background-image: url(../img/Neighborhood.jpg);
   background-size: auto,2400px;
   background-repeat: repeat-x;
   background-position: fixed, center center;
